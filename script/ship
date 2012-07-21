@@ -1,0 +1,7 @@
+#!/bin/sh -x
+CURRENT=`git branch | grep "*" | awk '{print $2}'`
+BRANCH=$1
+git checkout ${BRANCH}
+git merge ${CURRENT} 
+git commit -a -v
+git push origin ${BRANCH}

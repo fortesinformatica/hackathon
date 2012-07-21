@@ -1,0 +1,116 @@
+.atendimentoChamado{
+text-align:right;
+width:100px;
+margin-bottom:20px;
+}
+
+.atendimentoClienteLabel {
+line-height: 30px;
+vertical-align: top;
+}
+
+.atendimentoCliente{
+width:250px;
+}
+
+.atendimentoContato{
+width:200px;
+}
+
+.atendimentoContatoEmail{
+width:200px;
+}
+
+.atendimentoSistema{
+width:200px;
+}
+
+.atendimentoResponsavel{
+width:200px;
+}
+
+.atendimentoStatus{
+width:150px;
+}
+
+#horasContratadas{
+position:absolute;
+right:10px;
+top:90px;
+width:200px;
+height:50px;
+border:solid 1px #BBB;
+background-color:#DDD;
+text-align:right;
+padding-right:10px;
+}
+
+#horasContratadas div{
+display:block;
+}
+
+.atendimentoTitulo{
+width:800px;
+
+}
+
+.atendimentoDescricao{
+width:100%;
+height:80px;
+}
+
+
+.atendimentoNatureza{
+width:150px;
+}
+
+.atendimentoCriticidade{
+width:150px;
+}
+
+.atendimentoVersaoOri{
+width:60px;
+}
+
+
+.atendimentoVersaoPrevLib{
+width:60px;
+}
+
+.atendimentoCaminho{
+width:320px;
+}
+
+.atendimentoVencimento{
+width:80px;
+}
+
+
+.atendimentoVersaoLib{
+width:60px;
+}
+
+.atendimentoTramite{
+width:100%;
+height:95px;
+border:solid 1px #BBB;
+overflow:auto;
+}
+
+.progresso_atendimento{
+width:800px !important;
+}
+
+.progresso_atendimento span strong{
+color:#FFF;
+padding-left:10px;
+}
+
+.progresso_atendimento span{
+background-color:#D33;
+height:20px;
+}
+
+.clienteImplantacao{
+	color:#F00;	
+}

@@ -1,0 +1,133 @@
+body, html{
+margin:0px;
+background-color:#EEE;
+color:#444!important;
+font-size:12px;
+}
+
+body{
+font-family:arial, geneva, tahoma, sans-serif;
+}
+
+h1{
+font-size:32px!important;
+margin:0px;
+}
+
+header, section, footer{
+width:1000px;
+margin-left:auto;
+margin-right:auto;
+}
+
+header{
+height:80px;
+padding-top:20px;
+}
+
+section{
+position:relative;
+border:solid 1px #DDD;
+padding:10px;
+}
+
+a{
+text-decoration:none;
+color:#466;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+/*FORMULARIOS*/
+
+input[type=text],input[type=time],textarea{
+border:solid 1px #BBB;
+}
+
+input, select{
+color:#000;
+font-size:12px;
+}
+
+/*DIVs que representam linhas do formulário*/
+section form div{
+height:35px;
+width:980px;
+clear:both;
+}
+
+/*Todas as demais DIVs*/
+section form div div{
+height:auto;
+width:auto;
+clear:none;
+}
+
+section form div span{
+display:block;
+float:left;
+/*width:33%;*/
+height: 40px;
+}
+
+
+/**/
+.quatro_cols span{
+width:25%;
+}
+
+.label_quebra{
+display:block;
+}
+
+.altura_flexivel{
+height:auto;
+width:980px;
+}
+
+.colspan2{
+width:50% !important;
+}
+
+.list_table{
+border-spacing:0px;
+border-collapse:collapse;
+}
+
+.list_table td{
+padding-top:2px;
+padding-bottom:2px;
+}
+
+.list_table th{
+background-color:#777;
+color:#FFF;
+border-left:solid 1px #EEE;
+}
+
+.list_table thead tr>:first-child{
+border-left-width:0px;
+}
+
+.list_table tbody tr>:last-child a{
+text-decoration:none;
+color:#664;
+font-size:16px;
+}
+
+.list_table_alternate_row{
+background-color:#CCC;
+}
+
+/*Regras para elementos específicos*/
+#app_body{
+width:1000px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#app_body .list_table{
+width:100%;
+}

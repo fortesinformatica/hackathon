@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atlas</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="app_body">
+  <header>
+	  <h1>Sistema de Atendimento</h1>
+	  <%= link_to "[HOME]", chamados_path %>
+    [Menu] - <%= link_to '[SAIR]', destroy_user_session_path, :method => :delete %>
+  </header>
+  <%= yield %>  
+</div>
+</body>
+</html>

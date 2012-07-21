@@ -1,0 +1,32 @@
+<br/><br/>
+Pesquisa: <input id='pesquisa' type='text' />
+<table class="list_table">
+  <thead>
+    <tr>
+      <th>Chamado</th>
+      <th>Responsável</th>
+      <th>Cliente</th>
+      <th>Título</th>
+	    <th>Natureza</th>
+	    <th>Status</th>
+	    <th></th>
+    </tr>
+  </thead>
+<% @chamados.each do |chamado| %>
+  <tbody>
+    <tr>
+      <td><%= chamado.id.to_s.rjust(11, '0') %></td>
+      <td><%= chamado.try(:responsavel).try(:nome) %></td>
+      <td><%= chamado.try(:cliente).try(:nome) %></td>
+      <td><%= chamado.titulo %></td>
+      <td><%= chamado.try(:natureza).try(:nome) %></td>
+      <td><%= chamado.try(:status).try(:nome) %></td>
+    </tr>
+  </tbody>
+<% end %>
+</table>
+
+<div align='right' style="padding-right:10%">
+	Total: <%= @chamados.size %>
+</div>
+<%= link_to 'Novo Chamado', chamados_path, :method => :post %>

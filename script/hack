@@ -1,0 +1,15 @@
+#!/bin/sh -x
+
+FEATURE=$1
+CURRENT=`git branch | grep "*" | awk '{print $2}'`
+USER=`git config user.login`
+
+git checkout $CURRENT
+git pull --rebase origin $CURRENT
+git checkout -b $1 $CURRENT
+
+URL="https://api.github.com/repos/fortesinformatica/atlas/issues/${FEATURE}"
+curl -v -X PATCH -H "Accept: application/json" -H "Content-type: application/json" -u "${USER}" -d "{\"assignee\":\"${USER}\"}" $URL
+
+#URL="https://api.github.com/repos/fortesinformatica/forteschat3/issues/${FEATURE}/comments"
+#curl -v -H "Accept: application/json" -H "Content-type: application/json" -u "${USER}" -d "{\"body\":\"updates #23 assigned =${USER}\"}" $URL

@@ -1,0 +1,7 @@
+#!/bin/sh -x
+CURRENT=`git branch | grep "*" | awk '{print $2}'`
+BRANCH=$1
+git checkout ${BRANCH}
+git pull --rebase origin ${BRANCH}
+git checkout ${CURRENT}
+git rebase ${BRANCH} ${CURRENT}
